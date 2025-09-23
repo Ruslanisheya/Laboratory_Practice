@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s 			page 1
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccZO5ezj.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s 			page 1
   49              		.loc 1 7 41 is_stmt 0 view .LVU7
   50 0020 42F48042 		orr	r2, r2, #16384
   51 0024 C3F80824 		str	r2, [r3, #1032]
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s 			page 2
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccZO5ezj.s 			page 2
 
 
    8:Core/Src/init.c ****     *(uint32_t*)(0x40020400UL + 0x0CUL) |= 0x00; //Отключение PU/PD резисторов 
@@ -77,13 +77,13 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s 			page 1
   64              	.Letext0:
   65              		.file 2 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_defa
   66              		.file 3 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s 			page 3
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccZO5ezj.s 			page 3
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 init.c
-C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s:21     .text.GPIO_Ini:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s:27     .text.GPIO_Ini:00000000 GPIO_Ini
-C:\Users\Rusla\AppData\Local\Temp\cc2p22op.s:58     .text.GPIO_Ini:0000002c $d
+C:\Users\Rusla\AppData\Local\Temp\ccZO5ezj.s:21     .text.GPIO_Ini:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\ccZO5ezj.s:27     .text.GPIO_Ini:00000000 GPIO_Ini
+C:\Users\Rusla\AppData\Local\Temp\ccZO5ezj.s:58     .text.GPIO_Ini:0000002c $d
 
 NO UNDEFINED SYMBOLS
