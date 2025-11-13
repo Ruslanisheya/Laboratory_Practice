@@ -1,0 +1,173 @@
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/main.c"
+  20              		.section	.text.GPIO_Ini,"ax",%progbits
+  21              		.align	1
+  22              		.global	GPIO_Ini
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	GPIO_Ini:
+  28              	.LFB0:
+  29              		.file 2 "Core/Src/../Src/init.c"
+   1:Core/Src/../Src/init.c **** #include "../Inc/init.h"
+   2:Core/Src/../Src/init.c **** 
+   3:Core/Src/../Src/init.c **** void GPIO_Ini(void){
+  30              		.loc 2 3 20 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		@ link register save eliminated.
+   4:Core/Src/../Src/init.c ****     *(uint32_t*)(0x40023800UL + 0x30UL) |= 0x06; //Включение тактирования по
+  35              		.loc 2 4 5 view .LVU1
+  36 0000 0A4A     		ldr	r2, .L2
+  37 0002 D2F83038 		ldr	r3, [r2, #2096]
+  38              		.loc 2 4 41 is_stmt 0 view .LVU2
+  39 0006 43F00603 		orr	r3, r3, #6
+  40 000a C2F83038 		str	r3, [r2, #2096]
+   5:Core/Src/../Src/init.c ****     *(uint32_t*)(0x40020400UL + 0x00UL) |= 0x4000; //Настройка работы 7-го пин�
+  41              		.loc 2 5 5 is_stmt 1 view .LVU3
+  42 000e 084B     		ldr	r3, .L2+4
+  43 0010 D3F80024 		ldr	r2, [r3, #1024]
+  44              		.loc 2 5 41 is_stmt 0 view .LVU4
+  45 0014 42F48042 		orr	r2, r2, #16384
+  46 0018 C3F80024 		str	r2, [r3, #1024]
+   6:Core/Src/../Src/init.c ****     *(uint32_t*)(0x40020400UL + 0x04UL) |= 0x00; //Настройка на PushPull работу 7-
+  47              		.loc 2 6 5 is_stmt 1 view .LVU5
+   7:Core/Src/../Src/init.c ****     *(uint32_t*)(0x40020400UL + 0x08UL) |= 0x4000; //Настройка скорости работ
+  48              		.loc 2 7 5 view .LVU6
+  49 001c D3F80824 		ldr	r2, [r3, #1032]
+  50              		.loc 2 7 41 is_stmt 0 view .LVU7
+  51 0020 42F48042 		orr	r2, r2, #16384
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s 			page 2
+
+
+  52 0024 C3F80824 		str	r2, [r3, #1032]
+   8:Core/Src/../Src/init.c ****     *(uint32_t*)(0x40020400UL + 0x0CUL) |= 0x00; //Отключение PU/PD резисторов 
+  53              		.loc 2 8 5 is_stmt 1 view .LVU8
+   9:Core/Src/../Src/init.c **** }...
+  54              		.loc 2 9 1 is_stmt 0 view .LVU9
+  55 0028 7047     		bx	lr
+  56              	.L3:
+  57 002a 00BF     		.align	2
+  58              	.L2:
+  59 002c 00300240 		.word	1073885184
+  60 0030 00000240 		.word	1073872896
+  61              		.cfi_endproc
+  62              	.LFE0:
+  64              		.section	.text.main,"ax",%progbits
+  65              		.align	1
+  66              		.global	main
+  67              		.syntax unified
+  68              		.thumb
+  69              		.thumb_func
+  71              	main:
+  72              	.LFB1:
+   1:Core/Src/main.c **** #include <stdint.h>
+   2:Core/Src/main.c **** #include "../Inc/init.h"
+   3:Core/Src/main.c **** #include "../Src/init.c"
+   4:Core/Src/main.c **** 
+   5:Core/Src/main.c **** int main(void) { 
+  73              		.loc 1 5 16 is_stmt 1 view -0
+  74              		.cfi_startproc
+  75              		@ Volatile: function does not return.
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78 0000 08B5     		push	{r3, lr}
+  79              	.LCFI0:
+  80              		.cfi_def_cfa_offset 8
+  81              		.cfi_offset 3, -8
+  82              		.cfi_offset 14, -4
+   6:Core/Src/main.c ****     GPIO_Ini();
+  83              		.loc 1 6 5 view .LVU11
+  84 0002 FFF7FEFF 		bl	GPIO_Ini
+  85              	.LVL0:
+  86 0006 0CE0     		b	.L5
+  87              	.L9:
+   7:Core/Src/main.c ****     while(1){ 
+   8:Core/Src/main.c ****         
+   9:Core/Src/main.c ****         if(READ_GPIO_C13 != 0)
+  10:Core/Src/main.c ****         { 
+  11:Core/Src/main.c ****             SET_GPIO_B7; //Установка единицы в 7-ой бит регистра ODR 
+  88              		.loc 1 11 13 view .LVU12
+  89 0008 0F4A     		ldr	r2, .L10
+  90 000a D2F81834 		ldr	r3, [r2, #1048]
+  91 000e 43F08001 		orr	r1, r3, #128
+  92 0012 C2F81814 		str	r1, [r2, #1048]
+  12:Core/Src/main.c ****             RESET_GPIO_B14;
+  93              		.loc 1 12 13 view .LVU13
+  94 0016 43F08043 		orr	r3, r3, #1073741824
+  95 001a 43F08003 		orr	r3, r3, #128
+  96 001e C2F81834 		str	r3, [r2, #1048]
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s 			page 3
+
+
+  97              	.L5:
+   7:Core/Src/main.c ****     while(1){ 
+  98              		.loc 1 7 5 view .LVU14
+   9:Core/Src/main.c ****         { 
+  99              		.loc 1 9 9 view .LVU15
+   9:Core/Src/main.c ****         { 
+ 100              		.loc 1 9 12 is_stmt 0 view .LVU16
+ 101 0022 094B     		ldr	r3, .L10
+ 102 0024 D3F81038 		ldr	r3, [r3, #2064]
+   9:Core/Src/main.c ****         { 
+ 103              		.loc 1 9 11 view .LVU17
+ 104 0028 13F4005F 		tst	r3, #8192
+ 105 002c ECD1     		bne	.L9
+  13:Core/Src/main.c ****         } 
+  14:Core/Src/main.c ****         else
+  15:Core/Src/main.c ****         { 
+  16:Core/Src/main.c ****             RESET_GPIO_B7; //Установка нуля в 7-ой бит регистра ODR 
+ 106              		.loc 1 16 13 is_stmt 1 view .LVU18
+ 107 002e 064A     		ldr	r2, .L10
+ 108 0030 D2F81834 		ldr	r3, [r2, #1048]
+ 109 0034 43F40003 		orr	r3, r3, #8388608
+ 110 0038 C2F81834 		str	r3, [r2, #1048]
+  17:Core/Src/main.c ****             SET_GPIO_B14;
+ 111              		.loc 1 17 13 view .LVU19
+ 112 003c 43F48043 		orr	r3, r3, #16384
+ 113 0040 C2F81834 		str	r3, [r2, #1048]
+ 114 0044 EDE7     		b	.L5
+ 115              	.L11:
+ 116 0046 00BF     		.align	2
+ 117              	.L10:
+ 118 0048 00000240 		.word	1073872896
+ 119              		.cfi_endproc
+ 120              	.LFE1:
+ 122              		.text
+ 123              	.Letext0:
+ 124              		.file 3 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_defa
+ 125              		.file 4 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s:21     .text.GPIO_Ini:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s:27     .text.GPIO_Ini:00000000 GPIO_Ini
+C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s:59     .text.GPIO_Ini:0000002c $d
+C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s:65     .text.main:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s:71     .text.main:00000000 main
+C:\Users\Rusla\AppData\Local\Temp\ccxRd0Wj.s:118    .text.main:00000048 $d
+
+NO UNDEFINED SYMBOLS
