@@ -1,4 +1,7 @@
 #include <stdint.h>
+#include "..\..\CMSIS\Devices\STM32F4xx\Inc\stm32f4xx.h"
+#include "..\..\CMSIS\Devices\STM32F4xx\Inc\system_stm32f4xx.h"
+#include "..\..\CMSIS\Devices\STM32F4xx\Inc\STM32F429xx\stm32f429xx.h"
 
 void GPIO_Ini(void);
 
@@ -19,7 +22,7 @@ void GPIO_Ini(void);
 #define RCC_GPIOB_EN 0x02UL 
 #define RCC_GPIOC_EN 0x04UL 
 
-#define GPIOB_MODE_PIN7_OUT 0x4000UL 
-#define GPIOB_OTYPE_PIN7_PP 0x0000UL 
-#define GPIOB_OSPEED_PIN7_MID 0x4000UL 
-#define GPIOB_PUPDR_PIN7_NOPUPD 0x0000UL 
+#define GPIOB_MODE_PIN7_OUT 0x4000UL
+#define GPIOB_OTYPE_PIN7_PP 0x0000UL
+#define GPIOB_OSPEED_PIN7_MID 0x4000UL
+#define GPIOB_PUPDR_PIN7_NOPUPD 0x0000UL
