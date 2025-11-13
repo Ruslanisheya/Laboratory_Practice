@@ -13,10 +13,10 @@
 # ------------------------------------------------
 
 ######################################
-# target
+TARGET = LABORATORY_PRACTICE
 ######################################
-TARGET_SERIES = STM32F411
-TARGET_VERSION = RE
+TARGET_SERIES = STM32F429
+TARGET_VERSION = ZI
 
 ######################################
 # building variables

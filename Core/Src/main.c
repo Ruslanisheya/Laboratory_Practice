@@ -1,31 +1,75 @@
-#include <stdint.h>
 #include "../Inc/init.h"
 #include "../Src/init.c"
+#include <stdint.h>
 
-int main(void) { 
-    GPIO_Ini();
-    while(1){ 
+uint8_t flag1 =0;
+uint8_t flag2 =0;
+uint8_t current_led_indx = 2;
+uint8_t led_count = 0;
+
+void UpdateLEDs(void)
+    {
+        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR0 |GPIO_BSRR_BR7 | GPIO_BSRR_BR14 );
         
-        if(READ_GPIO_C13 != 0)
-        { 
-            SET_GPIO_B7; //Установка единицы в 7-ой бит регистра ODR 
-            RESET_GPIO_B14;
-        } 
-        else
-        { 
-            RESET_GPIO_B7; //Установка нуля в 7-ой бит регистра ODR 
-            SET_GPIO_B14;
-        } 
-    } 
+    for (uint8_t i = 0; i < led_count; i++) 
+        {
+        uint8_t led_index = ((current_led_indx + i) % 3);
+        switch (led_index) 
+            {
+            case 0:
+                SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS0);  // PB0
+                break;
+            case 1:
+                SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS7);  // PB7
+                break;
+            case 2:
+                SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS14); // PB14
+                break;
+
+            
+            }
+        }
+    }
+int main(void)
+{
+   
+ GPIO_init_led_pb7_blue ();
+ GPIO_init_led_pb14_red ();
+ GPIO_init_led_pb0_green ();
+ GPIO_button_input();
+     
+
+while (1)
+    {
+       if (BIT_READ(GPIOC_IDR, GPIO_PIN_8))
+       {
+        flag1 = 1;
+        current_led_indx = (current_led_indx + 1) % 3;
+        if(led_count == 2){
+            SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR0 |GPIO_BSRR_BR7 | GPIO_BSRR_BR14 );
+            for(volatile uint32_t i = 0; i < 100000; i++){}}
+        UpdateLEDs();
+        for(volatile uint32_t i = 0; i < 1000000; i++){}
+       }
+       else
+       {
+        flag1 = 0;
+       }
+       if (BIT_READ(GPIOC_IDR, GPIO_PIN_13))
+       {
+        flag2 = 1;
+        led_count = ((led_count+1))%3;
+        UpdateLEDs();
+       for(volatile uint32_t i = 0; i < 1000000; i++){}
+       }
+       else
+       {
+        flag2 = 0;
+       }
+    
+    }
 }
-//int main(void)
-//{
-//    *(uint32_t *)(0x40023800UL + 0x30UL) |= 0x02UL;   // включение тактирования GPIOB
-//    *(uint32_t *)(0x40020400UL + 0x00UL) |= 0x4000UL; // включение режима работы пина PB7
-//    *(uint32_t *)(0x40020400UL + 0x04UL) = 0x00UL;    // зануление режимов работы вывода, регистр
-//    *(uint32_t *)(0x40020400UL + 0x08UL) |= 0x4000UL; // настройка регистра OSPEED скорости (скорость средняя)
-//    *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x80UL;   // Включает светодиод, BSSR
-//    while (1)
-//    {
-//    }
-//}
+
+
+
+       

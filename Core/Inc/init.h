@@ -1,28 +1,45 @@
 #include <stdint.h>
-#include "..\..\CMSIS\Devices\STM32F4xx\Inc\stm32f4xx.h"
-#include "..\..\CMSIS\Devices\STM32F4xx\Inc\system_stm32f4xx.h"
-#include "..\..\CMSIS\Devices\STM32F4xx\Inc\STM32F429xx\stm32f429xx.h"
+#include "C:\programms\Tools\Laboratory_Practice\CMSIS\Devices\STM32F4xx\Inc\STM32F429xx\stm32f429xx.h"
+#include "stm32f4xx.h"          
 
-void GPIO_Ini(void);
+void GPIO_init_CMSIS(void);
+void GPIO_init__Memory(void);
+void GPIO_init_led_pb7_blue (void);
+void GPIO_init_led_pb14_red (void);
+void GPIO_init_led_pb0_green (void);
+void GPIO_button_input(void);
 
-#define READ_GPIO_C13 (*(uint32_t*)(0x40020800UL + 0x10UL) & 0x2000UL)
-#define SET_GPIO_B7 (*(uint32_t*)(0x40020400UL + 0x18UL) |= 0x80)
-#define RESET_GPIO_B7 (*(uint32_t*)(0x40020400UL + 0x18UL) |= 0x800000)
+#define RCC_AHB1ENR         *(uint32_t *)(0x40023800UL + 0x30UL)
+#define RCC_GPIOB_EN        0x02UL
+#define RCC_GPIOC_EN        0x06UL
 
-#define SET_GPIO_B14 (*(uint32_t*)(0x40020400UL + 0x18UL) |= 0x4000)
-#define RESET_GPIO_B14 (*(uint32_t*)(0x40020400UL + 0x18UL) |= 0x40000000)
+#define GPIOB_MODER         *(uint32_t *)(0x40020400UL + 0x00UL)
+#define GPIOB_OTYPER        *(uint32_t *)(0x40020400UL + 0x04UL)
+#define GPIOB_OSPEEDR       *(uint32_t *)(0x40020400UL + 0x08UL)
+#define GPIOB_BSRR          *(uint32_t *)(0x40020400UL + 0x18UL)
 
-#define RCC_GPIO_EN (*(uint32_t*)(0x40023800UL + 0x30UL))
+#define GPIOC_IDR           *(uint32_t *)(0x40020800UL + 0x10UL)
 
-#define GPIOB_MODER (*(uint32_t*)(0x40020400UL + 0x00UL))
-#define GPIOB_OTYPER (*(uint32_t*)(0x40020400UL + 0x04UL))
-#define GPIOB_OSPEEDR (*(uint32_t*)(0x40020400UL + 0x08UL))
-#define GPIOB_PUPDR (*(uint32_t*)(0x40020400UL + 0x0CUL))
+#define GPIO_PIN_MED_14     0x10000000UL
+#define GPIO_PIN_OUT_14     0x10000000UL
+#define GPIO_PIN_RESET_14   0x40000000UL
+#define GPIO_PIN_SET_14     0x4000UL
 
-#define RCC_GPIOB_EN 0x02UL 
-#define RCC_GPIOC_EN 0x04UL 
+#define GPIO_PIN_MED_7      0x4000UL
+#define GPIO_PIN_OUT_7      0x4000UL
+#define GPIO_OFF            0x00UL
+#define GPIO_PIN_RESET_7    0x800000UL
+#define GPIO_PIN_SET_7      0x80UL
 
-#define GPIOB_MODE_PIN7_OUT 0x4000UL
-#define GPIOB_OTYPE_PIN7_PP 0x0000UL
-#define GPIOB_OSPEED_PIN7_MID 0x4000UL
-#define GPIOB_PUPDR_PIN7_NOPUPD 0x0000UL
+#define GPIO_PIN_13         0x2000UL
+#define GPIO_PIN_8         0x100UL
+
+#define GPIO_PIN_MED_0      0x1UL
+#define GPIO_PIN_OUT_0      0x1UL
+#define GPIO_OFF            0x00UL
+#define GPIO_PIN_RESET_0    0x10000UL
+#define GPIO_PIN_SET_0      0x10UL
+
+
+#define BIT_SET(REG, BIT)   ((REG) |= (BIT))
+#define BIT_READ(REG, BIT)  ((REG) & (BIT))
