@@ -7,7 +7,7 @@ uint8_t f2 = 0;
 uint8_t f3 = 0;
 uint8_t f4 = 0;
 uint8_t CurLEDi = 0;
-uint8_t CoOLED = 0;
+uint8_t CoOLED = 2;
 uint8_t Mode = 0;
 uint32_t Freq = 0;
 uint32_t Timer = 0;
@@ -44,6 +44,7 @@ void ResetLED(void)
 //#################################################################################################
     void Blink182(void)
     {
+        for(volatile uint32_t i = 0; i < Freq; i++){}
         SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR0 |GPIO_BSRR_BR7 | GPIO_BSRR_BR14 );
         if (f4 == 0)
         {
@@ -90,88 +91,48 @@ int main(void)
             for(volatile uint32_t i = 0; i < 250000; i++){}
         }
 //#################################################################################################
-        if (BIT_READ(GPIOC_IDR, GPIO_PIN_13))
-        {
+        while (BIT_READ(GPIOC_IDR, GPIO_PIN_13))
+            {
+                Timer++;
+            }
+            if (Timer>= 500000)
+            {
+                Mode = ((Mode + 1) % 5);
+                Timer=0;
+            }
+            else if(Timer>0 && Timer<500000)
+            {
             if (f1 == 0)
             {
                 CoOLED = ((CoOLED + 1) % 3);
             }
             ResetLED();
-            Timer = 0;
+            Timer=0;
             for(volatile uint32_t i = 0; i < 250000; i++){}
-        }
+            }
 
+        switch (Mode)
+        {
+            case 0:
+                Freq = 0;
+                break;
+            case 1:
+                Freq = 1000000;
+                break;
+            case 2:
+                Freq = 500000;
+                break;
+            case 3:
+                Freq = 300000;
+                break;
+            case 4:
+                Freq = 50000;
+                break;
+        }
 
         if (Freq != 0)
         {
             Blink182();
-            for(volatile uint32_t i = 0; i < Freq; i++){}
         }
     }
 }
-
-
-
-// if (BIT_READ(GPIOC_IDR, GPIO_PIN_8))  
-// {
-//             timerbutton1++;
-//             flag1 = 1;
-//        }
-//        else
-//        {
-//         if(timerbutton1>= 5)
-//         {
-//             if (led_count == 3)
-//             {
-
-//                UpdateLEDs(); 
-//             }
-//             else
-//             {
-//             led_count = ((led_count+1));
-//             UpdateLEDs();
-//             }
-//         }
-//         if(timerbutton1>= 1 && timerbutton1 < 5)
-//         {
-//             if(frequency_index<3){
-//             frequency_index = (frequency_index+1);
-//             avtodelay = frequencies[frequency_index];
-//             }
-//         }
-        
-//         timerbutton1 = 0;
-//         flag1 = 0;
-//        }
-//        if (BIT_READ(GPIOC_IDR, GPIO_PIN_8))
-//        {
-//         timerbutton2++;
-//         flag2 = 1;
-//        }
-//        else
-//        {
-//         if(timerbutton2>= 5)
-//         {
-//             if (led_count == 0)
-//             {
-//                UpdateLEDs(); 
-//             }
-//             else
-//             {
-//            led_count = ((led_count-1));
-//             UpdateLEDs();
-//             }
-            
-//         }
-//         if(timerbutton2>= 1 && timerbutton2 < 5)
-//         {
-//             if(frequency_index>0){
-//             frequency_index = (frequency_index-1);
-//             avtodelay = frequencies[frequency_index];
-//             }
-//         }
-//         timerbutton2 = 0;
-//         flag2 = 0;
-//        }
-//        avtoper(avtodelay);
-//        */
