@@ -156,7 +156,7 @@ Discarded input sections
                 0x00000000       0x40 build_F429ZI/main.o
  .text.GPIO_InitLEDPB0
                 0x00000000       0x38 build_F429ZI/main.o
- .text.GPIO_BtnPB12
+ .text.GPIO_InitBtnPB12
                 0x00000000       0x18 build_F429ZI/main.o
  .text.INIT     0x00000000       0x14 build_F429ZI/main.o
  .text          0x00000000       0x14 build_F429ZI/startup_stm32f429xx.o
@@ -782,10 +782,10 @@ LOAD C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/bin/../lib/gcc/arm-no
  .debug_line    0x00000000      0x440 build_F429ZI/main.o
  .debug_line    0x00000440       0x72 build_F429ZI/startup_stm32f429xx.o
 
-.debug_str      0x00000000      0x33a
- .debug_str     0x00000000      0x33a build_F429ZI/main.o
-                                0x352 (size before relaxing)
- .debug_str     0x0000033a       0x59 build_F429ZI/startup_stm32f429xx.o
+.debug_str      0x00000000      0x33e
+ .debug_str     0x00000000      0x33e build_F429ZI/main.o
+                                0x356 (size before relaxing)
+ .debug_str     0x0000033e       0x59 build_F429ZI/startup_stm32f429xx.o
 
 .debug_frame    0x00000000       0xc0
  .debug_frame   0x00000000       0xc0 build_F429ZI/main.o
@@ -841,7 +841,7 @@ FLASH_IRQHandler                                  build_F429ZI/startup_stm32f429
 FMC_IRQHandler                                    build_F429ZI/startup_stm32f429xx.o
 FPU_IRQHandler                                    build_F429ZI/startup_stm32f429xx.o
 Freq                                              build_F429ZI/main.o
-GPIO_BtnPB12                                      build_F429ZI/main.o
+GPIO_InitBtnPB12                                  build_F429ZI/main.o
 GPIO_InitLEDPB0                                   build_F429ZI/main.o
 GPIO_InitLEDPB14                                  build_F429ZI/main.o
 GPIO_InitLEDPB7                                   build_F429ZI/main.o
