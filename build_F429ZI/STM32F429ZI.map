@@ -156,7 +156,7 @@ Discarded input sections
                 0x00000000       0x40 build_F429ZI/main.o
  .text.GPIO_InitLEDPB0
                 0x00000000       0x38 build_F429ZI/main.o
- .text.GPIO_InitBtnPB12
+ .text.GPIO_InitBtnPC12
                 0x00000000       0x18 build_F429ZI/main.o
  .text.INIT     0x00000000       0x14 build_F429ZI/main.o
  .text          0x00000000       0x14 build_F429ZI/startup_stm32f429xx.o
@@ -841,7 +841,7 @@ FLASH_IRQHandler                                  build_F429ZI/startup_stm32f429
 FMC_IRQHandler                                    build_F429ZI/startup_stm32f429xx.o
 FPU_IRQHandler                                    build_F429ZI/startup_stm32f429xx.o
 Freq                                              build_F429ZI/main.o
-GPIO_InitBtnPB12                                  build_F429ZI/main.o
+GPIO_InitBtnPC12                                  build_F429ZI/main.o
 GPIO_InitLEDPB0                                   build_F429ZI/main.o
 GPIO_InitLEDPB14                                  build_F429ZI/main.o
 GPIO_InitLEDPB7                                   build_F429ZI/main.o
