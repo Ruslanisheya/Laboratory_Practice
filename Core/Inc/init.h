@@ -4,10 +4,10 @@
 
 void GPIO_init_CMSIS(void);
 void GPIO_init__Memory(void);
-void GPIO_init_led_pb7_blue (void);
-void GPIO_init_led_pb14_red (void);
-void GPIO_init_led_pb0_green (void);
-void GPIO_button_input(void);
+void GPIO_InitLEDPB7 (void);
+void GPIO_InitLEDPB14 (void);
+void GPIO_InitLEDPB0 (void);
+void GPIO_BtnPB12(void);
 
 #define RCC_AHB1ENR         *(uint32_t *)(0x40023800UL + 0x30UL)
 #define RCC_GPIOB_EN        0x02UL
@@ -39,7 +39,6 @@ void GPIO_button_input(void);
 #define GPIO_OFF            0x00UL
 #define GPIO_PIN_RESET_0    0x10000UL
 #define GPIO_PIN_SET_0      0x10UL
-
 
 #define BIT_SET(REG, BIT)   ((REG) |= (BIT))
 #define BIT_READ(REG, BIT)  ((REG) & (BIT))

@@ -2,69 +2,76 @@
 #include "../Src/init.c"
 #include <stdint.h>
 
+//основные переменные
+uint8_t CurLEDi = 0;   //горящий в данный момент светодиод
+uint8_t CoOLED = 2;    //количество горящих светодиодов
 uint8_t f1 = 0;
 uint8_t f2 = 0;
 uint8_t f3 = 0;
-uint8_t f4 = 0;
-uint8_t CurLEDi = 0;
-uint8_t CoOLED = 2;
-uint8_t Mode = 0;
-uint32_t Freq = 0;
+
+//доп задание
+uint8_t Mode = 0;      //Текущий режим работы
+uint32_t Freq = 0;     //Частота мерцания
 uint32_t Timer = 0;
 
 // первая кнопка: меняет светодиод; если горят все три, то выкл/вкл светодиоды.
 // вторая кнопка: короткое нажатие - смена количества горящих светодиодов; длительное нажатие - смена режима работы (постоянное свечение; 0,5Гц; 1Гц; 2Гц; 5Гц).
-
+void INIT (void)
+{
+    GPIO_InitLEDPB7 ();
+    GPIO_InitLEDPB14 ();
+    GPIO_InitLEDPB0 ();
+    GPIO_BtnPB12();
+}
+//#################################################################################################
+//#################################################################################################
 void ResetLED(void)
-    {
-        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR0 |GPIO_BSRR_BR7 | GPIO_BSRR_BR14 );
-        if (f3 == 0)
+{
+    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR0 |GPIO_BSRR_BR7 | GPIO_BSRR_BR14 );
+    if (f2 == 0)
+        {
+            for (uint8_t i = 0; i <=CoOLED; i++) 
             {
-                for (uint8_t i = 0; i <=CoOLED; i++) 
+                uint8_t led_index = ((CurLEDi + i) % 3);
+                switch (led_index) 
                 {
-                    uint8_t led_index = ((CurLEDi + i) % 3);
-                    switch (led_index) 
-                    {
-                    case 0:
-                        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS0);
-                        break;
-                    case 1:
-                        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS7);
-                        break;
-                    case 2:
-                        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS14);
-                        break;
+                case 0:
+                    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS0);
+                    break;
+                case 1:
+                    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS7);
+                    break;
+                case 2:
+                    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS14);
+                    break;
 
                 
-                    }
                 }
             }
+        }
     }
 //#################################################################################################
 //#################################################################################################
-    void Blink182(void)
+void Blink182(void)
     {
         for(volatile uint32_t i = 0; i < Freq; i++){}
         SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR0 |GPIO_BSRR_BR7 | GPIO_BSRR_BR14 );
-        if (f4 == 0)
+        if (f3 == 0)
         {
             ResetLED();
-            f4 = 1;
+            f3 = 1;
         }
         else
         {
-            f4 = 0;
+            f3 = 0;
         }
     }
 //#################################################################################################
 //#################################################################################################
 int main(void)
 {
-    GPIO_init_led_pb7_blue ();
-    GPIO_init_led_pb14_red ();
-    GPIO_init_led_pb0_green ();
-    GPIO_button_input();
-     
+    INIT;
+//#################################################################################################
     while (1)
     {
 //#################################################################################################
@@ -72,14 +79,14 @@ int main(void)
         {
             if (CoOLED == 2)
             {
-                if (f3 == 0)
+                if (f2 == 0)
                 {
-                    f3 = 1;
+                    f2 = 1;
                     f1 = 1;
                 }
                 else
                 {
-                    f3 = 0;
+                    f2 = 0;
                     f1 = 0;
                 }
             }
