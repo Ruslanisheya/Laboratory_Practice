@@ -3,12 +3,12 @@
 void GPIO_init__Memory(void){};
 void GPIO_InitLEDPB7 (void)
 {
-*(uint32_t *)(0x40023800UL + 0x30UL) |= 0x02UL;
-*(uint32_t *)(0x40023800UL + 0x30UL) |= 0x06UL;
-*(uint32_t *)(0x40020400UL + 0x00UL) |= 0x4000UL;
-*(uint32_t *)(0x40020400UL + 0x04UL) |= 0x00UL;
-*(uint32_t *)(0x40020400UL + 0x08UL) |= 0x4000UL;
-*(uint32_t *)(0x40020400UL + 0x18UL) |= 0x800000UL;
+    *(uint32_t *)(0x40023800UL + 0x30UL) |= 0x02UL;
+    *(uint32_t *)(0x40023800UL + 0x30UL) |= 0x06UL;
+    *(uint32_t *)(0x40020400UL + 0x00UL) |= 0x4000UL;
+    *(uint32_t *)(0x40020400UL + 0x04UL) |= 0x00UL;
+    *(uint32_t *)(0x40020400UL + 0x08UL) |= 0x4000UL;
+    *(uint32_t *)(0x40020400UL + 0x18UL) |= 0x800000UL;
 }
 void GPIO_InitLEDPB14 (void)
 {
