@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
   53              		@ link register save eliminated.
    6:Core/Src/../Src/init.c **** *(uint32_t *)(0x40023800UL + 0x30UL) |= 0x02UL;
   54              		.loc 2 6 1 view .LVU3
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 2
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 2
 
 
   55 0000 0F4A     		ldr	r2, .L3
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  103              		@ frame_needed = 0, uses_anonymous_args = 0
  104              		@ link register save eliminated.
   15:Core/Src/../Src/init.c ****     RCC_AHB1ENR |= RCC_GPIOB_EN | RCC_GPIOC_EN;
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 3
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 3
 
 
  105              		.loc 2 15 5 view .LVU16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  153 0008 1363     		str	r3, [r2, #48]
   24:Core/Src/../Src/init.c ****    SET_BIT(GPIOB->MODER, GPIO_MODER_MODE0_0);
  154              		.loc 2 24 4 view .LVU25
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 4
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 4
 
 
  155 000a 0A4B     		ldr	r3, .L9+4
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  203 0010 DA60     		str	r2, [r3, #12]
   33:Core/Src/../Src/init.c **** }
  204              		.loc 2 33 1 is_stmt 0 view .LVU33
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 5
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 5
 
 
  205 0012 7047     		bx	lr
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  238 000a FFF7FEFF 		bl	GPIO_InitLEDPB0
  239              	.LVL2:
   24:Core/Src/main.c ****     GPIO_InitBtnPC12();
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 6
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 6
 
 
  240              		.loc 1 24 5 view .LVU38
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
   42:Core/Src/main.c ****                     SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS7);
  279              		.loc 1 42 21 is_stmt 1 view .LVU45
  280 0016 1549     		ldr	r1, .L24
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 7
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 7
 
 
  281 0018 8B69     		ldr	r3, [r1, #24]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  325 0050 0649     		ldr	r1, .L24
  326 0052 8B69     		ldr	r3, [r1, #24]
  327              	.LVL10:
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 8
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 8
 
 
   39:Core/Src/main.c ****                     break;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
   53:Core/Src/main.c **** //#################################################################################################
   54:Core/Src/main.c **** //#################################################################################################
   55:Core/Src/main.c **** void Blink182(void)
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 9
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 9
 
 
   56:Core/Src/main.c ****     {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
   65:Core/Src/main.c ****         {
   66:Core/Src/main.c ****             f3 = 0;
  418              		.loc 1 66 13 is_stmt 1 view .LVU76
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 10
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 10
 
 
  419              		.loc 1 66 16 is_stmt 0 view .LVU77
@@ -598,16 +598,19 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  466 0000 00B5     		push	{lr}
  467              	.LCFI5:
  468              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 11
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 11
 
 
  469              		.cfi_offset 14, -4
  470 0002 83B0     		sub	sp, sp, #12
  471              	.LCFI6:
  472              		.cfi_def_cfa_offset 16
- 473 0004 63E0     		b	.L56
- 474              	.L61:
-  73:Core/Src/main.c ****     INIT;
+  73:Core/Src/main.c ****     INIT();
+ 473              		.loc 1 73 5 view .LVU83
+ 474 0004 FFF7FEFF 		bl	INIT
+ 475              	.LVL17:
+ 476 0008 63E0     		b	.L56
+ 477              	.L61:
   74:Core/Src/main.c **** //#################################################################################################
   75:Core/Src/main.c ****     while (1)
   76:Core/Src/main.c ****     {
@@ -617,121 +620,121 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
   80:Core/Src/main.c ****             if (CoOLED == 2)
   81:Core/Src/main.c ****             {
   82:Core/Src/main.c ****                 if (f2 == 0)
- 475              		.loc 1 82 17 view .LVU83
- 476              		.loc 1 82 24 is_stmt 0 view .LVU84
- 477 0006 484B     		ldr	r3, .L62
- 478 0008 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 479              		.loc 1 82 20 view .LVU85
- 480 000a 2BB9     		cbnz	r3, .L38
+ 478              		.loc 1 82 17 view .LVU84
+ 479              		.loc 1 82 24 is_stmt 0 view .LVU85
+ 480 000a 484B     		ldr	r3, .L62
+ 481 000c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 482              		.loc 1 82 20 view .LVU86
+ 483 000e 2BB9     		cbnz	r3, .L38
   83:Core/Src/main.c ****                 {
   84:Core/Src/main.c ****                     f2 = 1;
- 481              		.loc 1 84 21 is_stmt 1 view .LVU86
- 482              		.loc 1 84 24 is_stmt 0 view .LVU87
- 483 000c 0123     		movs	r3, #1
- 484 000e 464A     		ldr	r2, .L62
- 485 0010 1370     		strb	r3, [r2]
+ 484              		.loc 1 84 21 is_stmt 1 view .LVU87
+ 485              		.loc 1 84 24 is_stmt 0 view .LVU88
+ 486 0010 0123     		movs	r3, #1
+ 487 0012 464A     		ldr	r2, .L62
+ 488 0014 1370     		strb	r3, [r2]
   85:Core/Src/main.c ****                     f1 = 1;
- 486              		.loc 1 85 21 is_stmt 1 view .LVU88
- 487              		.loc 1 85 24 is_stmt 0 view .LVU89
- 488 0012 464A     		ldr	r2, .L62+4
- 489 0014 1370     		strb	r3, [r2]
- 490 0016 6EE0     		b	.L39
- 491              	.L38:
+ 489              		.loc 1 85 21 is_stmt 1 view .LVU89
+ 490              		.loc 1 85 24 is_stmt 0 view .LVU90
+ 491 0016 464A     		ldr	r2, .L62+4
+ 492 0018 1370     		strb	r3, [r2]
+ 493 001a 6EE0     		b	.L39
+ 494              	.L38:
   86:Core/Src/main.c ****                 }
   87:Core/Src/main.c ****                 else
   88:Core/Src/main.c ****                 {
   89:Core/Src/main.c ****                     f2 = 0;
- 492              		.loc 1 89 21 is_stmt 1 view .LVU90
- 493              		.loc 1 89 24 is_stmt 0 view .LVU91
- 494 0018 0023     		movs	r3, #0
- 495 001a 434A     		ldr	r2, .L62
- 496 001c 1370     		strb	r3, [r2]
+ 495              		.loc 1 89 21 is_stmt 1 view .LVU91
+ 496              		.loc 1 89 24 is_stmt 0 view .LVU92
+ 497 001c 0023     		movs	r3, #0
+ 498 001e 434A     		ldr	r2, .L62
+ 499 0020 1370     		strb	r3, [r2]
   90:Core/Src/main.c ****                     f1 = 0;
- 497              		.loc 1 90 21 is_stmt 1 view .LVU92
- 498              		.loc 1 90 24 is_stmt 0 view .LVU93
- 499 001e 434A     		ldr	r2, .L62+4
- 500 0020 1370     		strb	r3, [r2]
- 501 0022 68E0     		b	.L39
- 502              	.L41:
- 503              	.LBB6:
+ 500              		.loc 1 90 21 is_stmt 1 view .LVU93
+ 501              		.loc 1 90 24 is_stmt 0 view .LVU94
+ 502 0022 434A     		ldr	r2, .L62+4
+ 503 0024 1370     		strb	r3, [r2]
+ 504 0026 68E0     		b	.L39
+ 505              	.L41:
+ 506              	.LBB6:
   91:Core/Src/main.c ****                 }
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 12
+
+
   92:Core/Src/main.c ****             }
   93:Core/Src/main.c ****             else
   94:Core/Src/main.c ****             {
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 12
-
-
   95:Core/Src/main.c ****                 CurLEDi = ((CurLEDi + 1) % 3);
   96:Core/Src/main.c ****             }
   97:Core/Src/main.c ****             ResetLED();
   98:Core/Src/main.c ****             for(volatile uint32_t i = 0; i < 250000; i++){}
- 504              		.loc 1 98 59 is_stmt 1 discriminator 3 view .LVU94
- 505              		.loc 1 98 55 discriminator 3 view .LVU95
- 506 0024 009B     		ldr	r3, [sp]
- 507 0026 0133     		adds	r3, r3, #1
- 508 0028 0093     		str	r3, [sp]
- 509              	.L40:
- 510              		.loc 1 98 44 discriminator 1 view .LVU96
- 511 002a 009A     		ldr	r2, [sp]
- 512 002c 404B     		ldr	r3, .L62+8
- 513 002e 9A42     		cmp	r2, r3
- 514 0030 F8D9     		bls	.L41
- 515 0032 03E0     		b	.L42
- 516              	.L43:
- 517              	.LBE6:
+ 507              		.loc 1 98 59 is_stmt 1 discriminator 3 view .LVU95
+ 508              		.loc 1 98 55 discriminator 3 view .LVU96
+ 509 0028 009B     		ldr	r3, [sp]
+ 510 002a 0133     		adds	r3, r3, #1
+ 511 002c 0093     		str	r3, [sp]
+ 512              	.L40:
+ 513              		.loc 1 98 44 discriminator 1 view .LVU97
+ 514 002e 009A     		ldr	r2, [sp]
+ 515 0030 404B     		ldr	r3, .L62+8
+ 516 0032 9A42     		cmp	r2, r3
+ 517 0034 F8D9     		bls	.L41
+ 518 0036 03E0     		b	.L42
+ 519              	.L43:
+ 520              	.LBE6:
   99:Core/Src/main.c ****         }
  100:Core/Src/main.c **** //#################################################################################################
  101:Core/Src/main.c ****         while (BIT_READ(GPIOC_IDR, GPIO_PIN_13))
  102:Core/Src/main.c ****             {
  103:Core/Src/main.c ****                 Timer++;
- 518              		.loc 1 103 17 view .LVU97
- 519              		.loc 1 103 22 is_stmt 0 view .LVU98
- 520 0034 3F4A     		ldr	r2, .L62+12
- 521 0036 1368     		ldr	r3, [r2]
- 522 0038 0133     		adds	r3, r3, #1
- 523 003a 1360     		str	r3, [r2]
- 524              	.L42:
+ 521              		.loc 1 103 17 view .LVU98
+ 522              		.loc 1 103 22 is_stmt 0 view .LVU99
+ 523 0038 3F4A     		ldr	r2, .L62+12
+ 524 003a 1368     		ldr	r3, [r2]
+ 525 003c 0133     		adds	r3, r3, #1
+ 526 003e 1360     		str	r3, [r2]
+ 527              	.L42:
  101:Core/Src/main.c ****             {
- 525              		.loc 1 101 16 is_stmt 1 view .LVU99
- 526 003c 3E4B     		ldr	r3, .L62+16
- 527 003e D3F81038 		ldr	r3, [r3, #2064]
- 528 0042 13F4005F 		tst	r3, #8192
- 529 0046 F5D1     		bne	.L43
+ 528              		.loc 1 101 16 is_stmt 1 view .LVU100
+ 529 0040 3E4B     		ldr	r3, .L62+16
+ 530 0042 D3F81038 		ldr	r3, [r3, #2064]
+ 531 0046 13F4005F 		tst	r3, #8192
+ 532 004a F5D1     		bne	.L43
  104:Core/Src/main.c ****             }
  105:Core/Src/main.c ****             if (Timer>= 500000)
- 530              		.loc 1 105 13 view .LVU100
- 531              		.loc 1 105 22 is_stmt 0 view .LVU101
- 532 0048 3A4B     		ldr	r3, .L62+12
- 533 004a 1B68     		ldr	r3, [r3]
- 534              		.loc 1 105 16 view .LVU102
- 535 004c 3B4A     		ldr	r2, .L62+20
- 536 004e 9342     		cmp	r3, r2
- 537 0050 16D9     		bls	.L44
+ 533              		.loc 1 105 13 view .LVU101
+ 534              		.loc 1 105 22 is_stmt 0 view .LVU102
+ 535 004c 3A4B     		ldr	r3, .L62+12
+ 536 004e 1B68     		ldr	r3, [r3]
+ 537              		.loc 1 105 16 view .LVU103
+ 538 0050 3B4A     		ldr	r2, .L62+20
+ 539 0052 9342     		cmp	r3, r2
+ 540 0054 16D9     		bls	.L44
  106:Core/Src/main.c ****             {
  107:Core/Src/main.c ****                 Mode = ((Mode + 1) % 5);
- 538              		.loc 1 107 17 is_stmt 1 view .LVU103
- 539              		.loc 1 107 31 is_stmt 0 view .LVU104
- 540 0052 3B49     		ldr	r1, .L62+24
- 541 0054 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
- 542 0056 0132     		adds	r2, r2, #1
- 543              		.loc 1 107 36 view .LVU105
- 544 0058 3A4B     		ldr	r3, .L62+28
- 545 005a 83FB0203 		smull	r0, r3, r3, r2
- 546 005e 5B10     		asrs	r3, r3, #1
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 13
+ 541              		.loc 1 107 17 is_stmt 1 view .LVU104
+ 542              		.loc 1 107 31 is_stmt 0 view .LVU105
+ 543 0056 3B49     		ldr	r1, .L62+24
+ 544 0058 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 545 005a 0132     		adds	r2, r2, #1
+ 546              		.loc 1 107 36 view .LVU106
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 13
 
 
- 547 0060 03EB8303 		add	r3, r3, r3, lsl #2
- 548 0064 D31A     		subs	r3, r2, r3
- 549              		.loc 1 107 22 view .LVU106
- 550 0066 0B70     		strb	r3, [r1]
+ 547 005c 3A4B     		ldr	r3, .L62+28
+ 548 005e 83FB0203 		smull	r0, r3, r3, r2
+ 549 0062 5B10     		asrs	r3, r3, #1
+ 550 0064 03EB8303 		add	r3, r3, r3, lsl #2
+ 551 0068 D31A     		subs	r3, r2, r3
+ 552              		.loc 1 107 22 view .LVU107
+ 553 006a 0B70     		strb	r3, [r1]
  108:Core/Src/main.c ****                 Timer=0;
- 551              		.loc 1 108 17 is_stmt 1 view .LVU107
- 552              		.loc 1 108 22 is_stmt 0 view .LVU108
- 553 0068 324B     		ldr	r3, .L62+12
- 554 006a 0022     		movs	r2, #0
- 555 006c 1A60     		str	r2, [r3]
- 556              	.L45:
+ 554              		.loc 1 108 17 is_stmt 1 view .LVU108
+ 555              		.loc 1 108 22 is_stmt 0 view .LVU109
+ 556 006c 324B     		ldr	r3, .L62+12
+ 557 006e 0022     		movs	r2, #0
+ 558 0070 1A60     		str	r2, [r3]
+ 559              	.L45:
  109:Core/Src/main.c ****             }
  110:Core/Src/main.c ****             else if(Timer>0 && Timer<500000)
  111:Core/Src/main.c ****             {
@@ -745,113 +748,113 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  119:Core/Src/main.c ****             }
  120:Core/Src/main.c **** 
  121:Core/Src/main.c ****         switch (Mode)
- 557              		.loc 1 121 9 is_stmt 1 view .LVU109
- 558 006e 344B     		ldr	r3, .L62+24
- 559 0070 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 560 0072 042B     		cmp	r3, #4
- 561 0074 28D8     		bhi	.L49
- 562 0076 DFE803F0 		tbb	[pc, r3]
- 563              	.L51:
- 564 007a 24       		.byte	(.L55-.L51)/2
- 565 007b 43       		.byte	(.L54-.L51)/2
- 566 007c 47       		.byte	(.L53-.L51)/2
- 567 007d 4B       		.byte	(.L52-.L51)/2
- 568 007e 4F       		.byte	(.L50-.L51)/2
- 569 007f 00       		.p2align 1
- 570              	.L44:
+ 560              		.loc 1 121 9 is_stmt 1 view .LVU110
+ 561 0072 344B     		ldr	r3, .L62+24
+ 562 0074 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 563 0076 042B     		cmp	r3, #4
+ 564 0078 28D8     		bhi	.L49
+ 565 007a DFE803F0 		tbb	[pc, r3]
+ 566              	.L51:
+ 567 007e 24       		.byte	(.L55-.L51)/2
+ 568 007f 43       		.byte	(.L54-.L51)/2
+ 569 0080 47       		.byte	(.L53-.L51)/2
+ 570 0081 4B       		.byte	(.L52-.L51)/2
+ 571 0082 4F       		.byte	(.L50-.L51)/2
+ 572 0083 00       		.p2align 1
+ 573              	.L44:
  110:Core/Src/main.c ****             {
- 571              		.loc 1 110 18 view .LVU110
+ 574              		.loc 1 110 18 view .LVU111
  110:Core/Src/main.c ****             {
- 572              		.loc 1 110 29 is_stmt 0 view .LVU111
- 573 0080 013B     		subs	r3, r3, #1
+ 575              		.loc 1 110 29 is_stmt 0 view .LVU112
+ 576 0084 013B     		subs	r3, r3, #1
  110:Core/Src/main.c ****             {
- 574              		.loc 1 110 20 view .LVU112
- 575 0082 314A     		ldr	r2, .L62+32
- 576 0084 9342     		cmp	r3, r2
- 577 0086 F2D8     		bhi	.L45
+ 577              		.loc 1 110 20 view .LVU113
+ 578 0086 314A     		ldr	r2, .L62+32
+ 579 0088 9342     		cmp	r3, r2
+ 580 008a F2D8     		bhi	.L45
  112:Core/Src/main.c ****             {
- 578              		.loc 1 112 13 is_stmt 1 view .LVU113
+ 581              		.loc 1 112 13 is_stmt 1 view .LVU114
  112:Core/Src/main.c ****             {
- 579              		.loc 1 112 20 is_stmt 0 view .LVU114
- 580 0088 284B     		ldr	r3, .L62+4
- 581 008a 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 112:Core/Src/main.c ****             {
- 582              		.loc 1 112 16 view .LVU115
- 583 008c 53B9     		cbnz	r3, .L46
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 14
+ 582              		.loc 1 112 20 is_stmt 0 view .LVU115
+ 583 008c 284B     		ldr	r3, .L62+4
+ 584 008e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 14
 
 
+ 112:Core/Src/main.c ****             {
+ 585              		.loc 1 112 16 view .LVU116
+ 586 0090 53B9     		cbnz	r3, .L46
  114:Core/Src/main.c ****             }
- 584              		.loc 1 114 17 is_stmt 1 view .LVU116
+ 587              		.loc 1 114 17 is_stmt 1 view .LVU117
  114:Core/Src/main.c ****             }
- 585              		.loc 1 114 35 is_stmt 0 view .LVU117
- 586 008e 2F49     		ldr	r1, .L62+36
- 587 0090 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
- 588 0092 0132     		adds	r2, r2, #1
+ 588              		.loc 1 114 35 is_stmt 0 view .LVU118
+ 589 0092 2F49     		ldr	r1, .L62+36
+ 590 0094 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 591 0096 0132     		adds	r2, r2, #1
  114:Core/Src/main.c ****             }
- 589              		.loc 1 114 40 view .LVU118
- 590 0094 A3F1AA33 		sub	r3, r3, #-1431655766
- 591 0098 83FB0203 		smull	r0, r3, r3, r2
- 592 009c 03EB4303 		add	r3, r3, r3, lsl #1
- 593 00a0 D31A     		subs	r3, r2, r3
+ 592              		.loc 1 114 40 view .LVU119
+ 593 0098 A3F1AA33 		sub	r3, r3, #-1431655766
+ 594 009c 83FB0203 		smull	r0, r3, r3, r2
+ 595 00a0 03EB4303 		add	r3, r3, r3, lsl #1
+ 596 00a4 D31A     		subs	r3, r2, r3
  114:Core/Src/main.c ****             }
- 594              		.loc 1 114 24 view .LVU119
- 595 00a2 0B70     		strb	r3, [r1]
- 596              	.L46:
+ 597              		.loc 1 114 24 view .LVU120
+ 598 00a6 0B70     		strb	r3, [r1]
+ 599              	.L46:
  116:Core/Src/main.c ****             Timer=0;
- 597              		.loc 1 116 13 is_stmt 1 view .LVU120
- 598 00a4 FFF7FEFF 		bl	ResetLED
- 599              	.LVL17:
+ 600              		.loc 1 116 13 is_stmt 1 view .LVU121
+ 601 00a8 FFF7FEFF 		bl	ResetLED
+ 602              	.LVL18:
  117:Core/Src/main.c ****             for(volatile uint32_t i = 0; i < 250000; i++){}
- 600              		.loc 1 117 13 view .LVU121
+ 603              		.loc 1 117 13 view .LVU122
  117:Core/Src/main.c ****             for(volatile uint32_t i = 0; i < 250000; i++){}
- 601              		.loc 1 117 18 is_stmt 0 view .LVU122
- 602 00a8 0023     		movs	r3, #0
- 603 00aa 224A     		ldr	r2, .L62+12
- 604 00ac 1360     		str	r3, [r2]
+ 604              		.loc 1 117 18 is_stmt 0 view .LVU123
+ 605 00ac 0023     		movs	r3, #0
+ 606 00ae 224A     		ldr	r2, .L62+12
+ 607 00b0 1360     		str	r3, [r2]
  118:Core/Src/main.c ****             }
- 605              		.loc 1 118 13 is_stmt 1 view .LVU123
- 606              	.LBB7:
+ 608              		.loc 1 118 13 is_stmt 1 view .LVU124
+ 609              	.LBB7:
  118:Core/Src/main.c ****             }
- 607              		.loc 1 118 17 view .LVU124
+ 610              		.loc 1 118 17 view .LVU125
  118:Core/Src/main.c ****             }
- 608              		.loc 1 118 35 is_stmt 0 view .LVU125
- 609 00ae 0193     		str	r3, [sp, #4]
+ 611              		.loc 1 118 35 is_stmt 0 view .LVU126
+ 612 00b2 0193     		str	r3, [sp, #4]
  118:Core/Src/main.c ****             }
- 610              		.loc 1 118 13 view .LVU126
- 611 00b0 02E0     		b	.L47
- 612              	.L48:
+ 613              		.loc 1 118 13 view .LVU127
+ 614 00b4 02E0     		b	.L47
+ 615              	.L48:
  118:Core/Src/main.c ****             }
- 613              		.loc 1 118 59 is_stmt 1 discriminator 3 view .LVU127
+ 616              		.loc 1 118 59 is_stmt 1 discriminator 3 view .LVU128
  118:Core/Src/main.c ****             }
- 614              		.loc 1 118 55 discriminator 3 view .LVU128
- 615 00b2 019B     		ldr	r3, [sp, #4]
- 616 00b4 0133     		adds	r3, r3, #1
- 617 00b6 0193     		str	r3, [sp, #4]
- 618              	.L47:
+ 617              		.loc 1 118 55 discriminator 3 view .LVU129
+ 618 00b6 019B     		ldr	r3, [sp, #4]
+ 619 00b8 0133     		adds	r3, r3, #1
+ 620 00ba 0193     		str	r3, [sp, #4]
+ 621              	.L47:
  118:Core/Src/main.c ****             }
- 619              		.loc 1 118 44 discriminator 1 view .LVU129
- 620 00b8 019A     		ldr	r2, [sp, #4]
- 621 00ba 1D4B     		ldr	r3, .L62+8
- 622 00bc 9A42     		cmp	r2, r3
- 623 00be F8D9     		bls	.L48
- 624 00c0 D5E7     		b	.L45
- 625              	.L55:
- 626              	.LBE7:
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 15
+ 622              		.loc 1 118 44 discriminator 1 view .LVU130
+ 623 00bc 019A     		ldr	r2, [sp, #4]
+ 624 00be 1D4B     		ldr	r3, .L62+8
+ 625 00c0 9A42     		cmp	r2, r3
+ 626 00c2 F8D9     		bls	.L48
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 15
 
 
+ 627 00c4 D5E7     		b	.L45
+ 628              	.L55:
+ 629              	.LBE7:
  122:Core/Src/main.c ****         {
  123:Core/Src/main.c ****             case 0:
  124:Core/Src/main.c ****                 Freq = 0;
- 627              		.loc 1 124 17 view .LVU130
- 628              		.loc 1 124 22 is_stmt 0 view .LVU131
- 629 00c2 234B     		ldr	r3, .L62+40
- 630 00c4 0022     		movs	r2, #0
- 631 00c6 1A60     		str	r2, [r3]
+ 630              		.loc 1 124 17 view .LVU131
+ 631              		.loc 1 124 22 is_stmt 0 view .LVU132
+ 632 00c6 234B     		ldr	r3, .L62+40
+ 633 00c8 0022     		movs	r2, #0
+ 634 00ca 1A60     		str	r2, [r3]
  125:Core/Src/main.c ****                 break;
- 632              		.loc 1 125 17 is_stmt 1 view .LVU132
- 633              	.L49:
+ 635              		.loc 1 125 17 is_stmt 1 view .LVU133
+ 636              	.L49:
  126:Core/Src/main.c ****             case 1:
  127:Core/Src/main.c ****                 Freq = 1000000;
  128:Core/Src/main.c ****                 break;
@@ -867,238 +870,236 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 1
  138:Core/Src/main.c ****         }
  139:Core/Src/main.c **** 
  140:Core/Src/main.c ****         if (Freq != 0)
- 634              		.loc 1 140 9 view .LVU133
- 635              		.loc 1 140 18 is_stmt 0 view .LVU134
- 636 00c8 214B     		ldr	r3, .L62+40
- 637 00ca 1B68     		ldr	r3, [r3]
- 638              		.loc 1 140 12 view .LVU135
- 639 00cc 4BBB     		cbnz	r3, .L60
- 640              	.L56:
-  73:Core/Src/main.c **** //#################################################################################################
- 641              		.loc 1 73 5 is_stmt 1 view .LVU136
+ 637              		.loc 1 140 9 view .LVU134
+ 638              		.loc 1 140 18 is_stmt 0 view .LVU135
+ 639 00cc 214B     		ldr	r3, .L62+40
+ 640 00ce 1B68     		ldr	r3, [r3]
+ 641              		.loc 1 140 12 view .LVU136
+ 642 00d0 4BBB     		cbnz	r3, .L60
+ 643              	.L56:
   75:Core/Src/main.c ****     {
- 642              		.loc 1 75 5 view .LVU137
+ 644              		.loc 1 75 5 is_stmt 1 view .LVU137
   78:Core/Src/main.c ****         {
- 643              		.loc 1 78 9 view .LVU138
+ 645              		.loc 1 78 9 view .LVU138
   78:Core/Src/main.c ****         {
- 644              		.loc 1 78 13 is_stmt 0 view .LVU139
- 645 00ce 1A4B     		ldr	r3, .L62+16
- 646 00d0 D3F81038 		ldr	r3, [r3, #2064]
+ 646              		.loc 1 78 13 is_stmt 0 view .LVU139
+ 647 00d2 1A4B     		ldr	r3, .L62+16
+ 648 00d4 D3F81038 		ldr	r3, [r3, #2064]
   78:Core/Src/main.c ****         {
- 647              		.loc 1 78 12 view .LVU140
- 648 00d4 13F4805F 		tst	r3, #4096
- 649 00d8 B0D0     		beq	.L42
+ 649              		.loc 1 78 12 view .LVU140
+ 650 00d8 13F4805F 		tst	r3, #4096
+ 651 00dc B0D0     		beq	.L42
   80:Core/Src/main.c ****             {
- 650              		.loc 1 80 13 is_stmt 1 view .LVU141
+ 652              		.loc 1 80 13 is_stmt 1 view .LVU141
   80:Core/Src/main.c ****             {
- 651              		.loc 1 80 24 is_stmt 0 view .LVU142
- 652 00da 1C4B     		ldr	r3, .L62+36
- 653 00dc 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 653              		.loc 1 80 24 is_stmt 0 view .LVU142
+ 654 00de 1C4B     		ldr	r3, .L62+36
+ 655 00e0 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
   80:Core/Src/main.c ****             {
- 654              		.loc 1 80 16 view .LVU143
- 655 00de 022B     		cmp	r3, #2
- 656 00e0 91D0     		beq	.L61
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 16
+ 656              		.loc 1 80 16 view .LVU143
+ 657 00e2 022B     		cmp	r3, #2
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 16
 
 
+ 658 00e4 91D0     		beq	.L61
   95:Core/Src/main.c ****             }
- 657              		.loc 1 95 17 is_stmt 1 view .LVU144
+ 659              		.loc 1 95 17 is_stmt 1 view .LVU144
   95:Core/Src/main.c ****             }
- 658              		.loc 1 95 37 is_stmt 0 view .LVU145
- 659 00e2 1C49     		ldr	r1, .L62+44
- 660 00e4 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
- 661 00e6 0132     		adds	r2, r2, #1
+ 660              		.loc 1 95 37 is_stmt 0 view .LVU145
+ 661 00e6 1C49     		ldr	r1, .L62+44
+ 662 00e8 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2
+ 663 00ea 0132     		adds	r2, r2, #1
   95:Core/Src/main.c ****             }
- 662              		.loc 1 95 42 view .LVU146
- 663 00e8 1B4B     		ldr	r3, .L62+48
- 664 00ea 83FB0203 		smull	r0, r3, r3, r2
- 665 00ee 03EB4303 		add	r3, r3, r3, lsl #1
- 666 00f2 D31A     		subs	r3, r2, r3
+ 664              		.loc 1 95 42 view .LVU146
+ 665 00ec 1B4B     		ldr	r3, .L62+48
+ 666 00ee 83FB0203 		smull	r0, r3, r3, r2
+ 667 00f2 03EB4303 		add	r3, r3, r3, lsl #1
+ 668 00f6 D31A     		subs	r3, r2, r3
   95:Core/Src/main.c ****             }
- 667              		.loc 1 95 25 view .LVU147
- 668 00f4 0B70     		strb	r3, [r1]
- 669              	.L39:
+ 669              		.loc 1 95 25 view .LVU147
+ 670 00f8 0B70     		strb	r3, [r1]
+ 671              	.L39:
   97:Core/Src/main.c ****             for(volatile uint32_t i = 0; i < 250000; i++){}
- 670              		.loc 1 97 13 is_stmt 1 view .LVU148
- 671 00f6 FFF7FEFF 		bl	ResetLED
- 672              	.LVL18:
+ 672              		.loc 1 97 13 is_stmt 1 view .LVU148
+ 673 00fa FFF7FEFF 		bl	ResetLED
+ 674              	.LVL19:
   98:Core/Src/main.c ****         }
- 673              		.loc 1 98 13 view .LVU149
- 674              	.LBB8:
+ 675              		.loc 1 98 13 view .LVU149
+ 676              	.LBB8:
   98:Core/Src/main.c ****         }
- 675              		.loc 1 98 17 view .LVU150
+ 677              		.loc 1 98 17 view .LVU150
   98:Core/Src/main.c ****         }
- 676              		.loc 1 98 35 is_stmt 0 view .LVU151
- 677 00fa 0023     		movs	r3, #0
- 678 00fc 0093     		str	r3, [sp]
+ 678              		.loc 1 98 35 is_stmt 0 view .LVU151
+ 679 00fe 0023     		movs	r3, #0
+ 680 0100 0093     		str	r3, [sp]
   98:Core/Src/main.c ****         }
- 679              		.loc 1 98 13 view .LVU152
- 680 00fe 94E7     		b	.L40
- 681              	.L54:
- 682              	.LBE8:
+ 681              		.loc 1 98 13 view .LVU152
+ 682 0102 94E7     		b	.L40
+ 683              	.L54:
+ 684              	.LBE8:
  127:Core/Src/main.c ****                 break;
- 683              		.loc 1 127 17 is_stmt 1 view .LVU153
+ 685              		.loc 1 127 17 is_stmt 1 view .LVU153
  127:Core/Src/main.c ****                 break;
- 684              		.loc 1 127 22 is_stmt 0 view .LVU154
- 685 0100 134B     		ldr	r3, .L62+40
- 686 0102 164A     		ldr	r2, .L62+52
- 687 0104 1A60     		str	r2, [r3]
+ 686              		.loc 1 127 22 is_stmt 0 view .LVU154
+ 687 0104 134B     		ldr	r3, .L62+40
+ 688 0106 164A     		ldr	r2, .L62+52
+ 689 0108 1A60     		str	r2, [r3]
  128:Core/Src/main.c ****             case 2:
- 688              		.loc 1 128 17 is_stmt 1 view .LVU155
- 689 0106 DFE7     		b	.L49
- 690              	.L53:
+ 690              		.loc 1 128 17 is_stmt 1 view .LVU155
+ 691 010a DFE7     		b	.L49
+ 692              	.L53:
  130:Core/Src/main.c ****                 break;
- 691              		.loc 1 130 17 view .LVU156
+ 693              		.loc 1 130 17 view .LVU156
  130:Core/Src/main.c ****                 break;
- 692              		.loc 1 130 22 is_stmt 0 view .LVU157
- 693 0108 114B     		ldr	r3, .L62+40
- 694 010a 154A     		ldr	r2, .L62+56
- 695 010c 1A60     		str	r2, [r3]
+ 694              		.loc 1 130 22 is_stmt 0 view .LVU157
+ 695 010c 114B     		ldr	r3, .L62+40
+ 696 010e 154A     		ldr	r2, .L62+56
+ 697 0110 1A60     		str	r2, [r3]
  131:Core/Src/main.c ****             case 3:
- 696              		.loc 1 131 17 is_stmt 1 view .LVU158
- 697 010e DBE7     		b	.L49
- 698              	.L52:
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 17
+ 698              		.loc 1 131 17 is_stmt 1 view .LVU158
+ 699 0112 DBE7     		b	.L49
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 17
 
 
+ 700              	.L52:
  133:Core/Src/main.c ****                 break;
- 699              		.loc 1 133 17 view .LVU159
+ 701              		.loc 1 133 17 view .LVU159
  133:Core/Src/main.c ****                 break;
- 700              		.loc 1 133 22 is_stmt 0 view .LVU160
- 701 0110 0F4B     		ldr	r3, .L62+40
- 702 0112 144A     		ldr	r2, .L62+60
- 703 0114 1A60     		str	r2, [r3]
+ 702              		.loc 1 133 22 is_stmt 0 view .LVU160
+ 703 0114 0F4B     		ldr	r3, .L62+40
+ 704 0116 144A     		ldr	r2, .L62+60
+ 705 0118 1A60     		str	r2, [r3]
  134:Core/Src/main.c ****             case 4:
- 704              		.loc 1 134 17 is_stmt 1 view .LVU161
- 705 0116 D7E7     		b	.L49
- 706              	.L50:
+ 706              		.loc 1 134 17 is_stmt 1 view .LVU161
+ 707 011a D7E7     		b	.L49
+ 708              	.L50:
  136:Core/Src/main.c ****                 break;
- 707              		.loc 1 136 17 view .LVU162
+ 709              		.loc 1 136 17 view .LVU162
  136:Core/Src/main.c ****                 break;
- 708              		.loc 1 136 22 is_stmt 0 view .LVU163
- 709 0118 0D4B     		ldr	r3, .L62+40
- 710 011a 4CF25032 		movw	r2, #50000
- 711 011e 1A60     		str	r2, [r3]
+ 710              		.loc 1 136 22 is_stmt 0 view .LVU163
+ 711 011c 0D4B     		ldr	r3, .L62+40
+ 712 011e 4CF25032 		movw	r2, #50000
+ 713 0122 1A60     		str	r2, [r3]
  137:Core/Src/main.c ****         }
- 712              		.loc 1 137 17 is_stmt 1 view .LVU164
- 713 0120 D2E7     		b	.L49
- 714              	.L60:
+ 714              		.loc 1 137 17 is_stmt 1 view .LVU164
+ 715 0124 D2E7     		b	.L49
+ 716              	.L60:
  141:Core/Src/main.c ****         {
  142:Core/Src/main.c ****             Blink182();
- 715              		.loc 1 142 13 view .LVU165
- 716 0122 FFF7FEFF 		bl	Blink182
- 717              	.LVL19:
- 718 0126 D2E7     		b	.L56
- 719              	.L63:
- 720              		.align	2
- 721              	.L62:
- 722 0128 00000000 		.word	f2
- 723 012c 00000000 		.word	f1
- 724 0130 8FD00300 		.word	249999
- 725 0134 00000000 		.word	Timer
- 726 0138 00000240 		.word	1073872896
- 727 013c 1FA10700 		.word	499999
- 728 0140 00000000 		.word	Mode
- 729 0144 67666666 		.word	1717986919
- 730 0148 1EA10700 		.word	499998
- 731 014c 00000000 		.word	CoOLED
- 732 0150 00000000 		.word	Freq
- 733 0154 00000000 		.word	CurLEDi
- 734 0158 56555555 		.word	1431655766
- 735 015c 40420F00 		.word	1000000
- 736 0160 20A10700 		.word	500000
- 737 0164 E0930400 		.word	300000
- 738              		.cfi_endproc
- 739              	.LFE138:
- 741              		.global	Timer
- 742              		.section	.bss.Timer,"aw",%nobits
- 743              		.align	2
- 746              	Timer:
- 747 0000 00000000 		.space	4
- 748              		.global	Freq
- 749              		.section	.bss.Freq,"aw",%nobits
- 750              		.align	2
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 18
+ 717              		.loc 1 142 13 view .LVU165
+ 718 0126 FFF7FEFF 		bl	Blink182
+ 719              	.LVL20:
+ 720 012a D2E7     		b	.L56
+ 721              	.L63:
+ 722              		.align	2
+ 723              	.L62:
+ 724 012c 00000000 		.word	f2
+ 725 0130 00000000 		.word	f1
+ 726 0134 8FD00300 		.word	249999
+ 727 0138 00000000 		.word	Timer
+ 728 013c 00000240 		.word	1073872896
+ 729 0140 1FA10700 		.word	499999
+ 730 0144 00000000 		.word	Mode
+ 731 0148 67666666 		.word	1717986919
+ 732 014c 1EA10700 		.word	499998
+ 733 0150 00000000 		.word	CoOLED
+ 734 0154 00000000 		.word	Freq
+ 735 0158 00000000 		.word	CurLEDi
+ 736 015c 56555555 		.word	1431655766
+ 737 0160 40420F00 		.word	1000000
+ 738 0164 20A10700 		.word	500000
+ 739 0168 E0930400 		.word	300000
+ 740              		.cfi_endproc
+ 741              	.LFE138:
+ 743              		.global	Timer
+ 744              		.section	.bss.Timer,"aw",%nobits
+ 745              		.align	2
+ 748              	Timer:
+ 749 0000 00000000 		.space	4
+ 750              		.global	Freq
+ 751              		.section	.bss.Freq,"aw",%nobits
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 18
 
 
- 753              	Freq:
- 754 0000 00000000 		.space	4
- 755              		.global	Mode
- 756              		.section	.bss.Mode,"aw",%nobits
- 759              	Mode:
- 760 0000 00       		.space	1
- 761              		.global	f3
- 762              		.section	.bss.f3,"aw",%nobits
- 765              	f3:
- 766 0000 00       		.space	1
- 767              		.global	f2
- 768              		.section	.bss.f2,"aw",%nobits
- 771              	f2:
- 772 0000 00       		.space	1
- 773              		.global	f1
- 774              		.section	.bss.f1,"aw",%nobits
- 777              	f1:
- 778 0000 00       		.space	1
- 779              		.global	CoOLED
- 780              		.section	.data.CoOLED,"aw"
- 783              	CoOLED:
- 784 0000 02       		.byte	2
- 785              		.global	CurLEDi
- 786              		.section	.bss.CurLEDi,"aw",%nobits
- 789              	CurLEDi:
- 790 0000 00       		.space	1
- 791              		.text
- 792              	.Letext0:
- 793              		.file 3 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_defa
- 794              		.file 4 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h
- 795              		.file 5 "C:\\programms\\Tools\\Laboratory_Practice\\CMSIS\\Devices\\STM32F4xx\\Inc\\STM32F429xx\\s
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s 			page 19
+ 752              		.align	2
+ 755              	Freq:
+ 756 0000 00000000 		.space	4
+ 757              		.global	Mode
+ 758              		.section	.bss.Mode,"aw",%nobits
+ 761              	Mode:
+ 762 0000 00       		.space	1
+ 763              		.global	f3
+ 764              		.section	.bss.f3,"aw",%nobits
+ 767              	f3:
+ 768 0000 00       		.space	1
+ 769              		.global	f2
+ 770              		.section	.bss.f2,"aw",%nobits
+ 773              	f2:
+ 774 0000 00       		.space	1
+ 775              		.global	f1
+ 776              		.section	.bss.f1,"aw",%nobits
+ 779              	f1:
+ 780 0000 00       		.space	1
+ 781              		.global	CoOLED
+ 782              		.section	.data.CoOLED,"aw"
+ 785              	CoOLED:
+ 786 0000 02       		.byte	2
+ 787              		.global	CurLEDi
+ 788              		.section	.bss.CurLEDi,"aw",%nobits
+ 791              	CurLEDi:
+ 792 0000 00       		.space	1
+ 793              		.text
+ 794              	.Letext0:
+ 795              		.file 3 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_defa
+ 796              		.file 4 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h
+ 797              		.file 5 "C:\\programms\\Tools\\Laboratory_Practice\\CMSIS\\Devices\\STM32F4xx\\Inc\\STM32F429xx\\s
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:21     .text.GPIO_init__Memory:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:27     .text.GPIO_init__Memory:00000000 GPIO_init__Memory
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:41     .text.GPIO_InitLEDPB7:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:47     .text.GPIO_InitLEDPB7:00000000 GPIO_InitLEDPB7
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:86     .text.GPIO_InitLEDPB7:00000040 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:92     .text.GPIO_InitLEDPB14:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:98     .text.GPIO_InitLEDPB14:00000000 GPIO_InitLEDPB14
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:130    .text.GPIO_InitLEDPB14:00000038 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:136    .text.GPIO_InitLEDPB0:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:142    .text.GPIO_InitLEDPB0:00000000 GPIO_InitLEDPB0
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:176    .text.GPIO_InitLEDPB0:00000030 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:182    .text.GPIO_InitBtnPC12:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:188    .text.GPIO_InitBtnPC12:00000000 GPIO_InitBtnPC12
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:209    .text.GPIO_InitBtnPC12:00000014 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:214    .text.INIT:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:220    .text.INIT:00000000 INIT
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:249    .text.ResetLED:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:255    .text.ResetLED:00000000 ResetLED
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:356    .text.ResetLED:0000006c $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:771    .bss.f2:00000000 f2
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:783    .data.CoOLED:00000000 CoOLED
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:789    .bss.CurLEDi:00000000 CurLEDi
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:365    .text.Blink182:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:371    .text.Blink182:00000000 Blink182
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:446    .text.Blink182:00000048 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:753    .bss.Freq:00000000 Freq
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:765    .bss.f3:00000000 f3
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:453    .text.main:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:459    .text.main:00000000 main
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:564    .text.main:0000007a $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:722    .text.main:00000128 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:777    .bss.f1:00000000 f1
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:746    .bss.Timer:00000000 Timer
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:759    .bss.Mode:00000000 Mode
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:743    .bss.Timer:00000000 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:750    .bss.Freq:00000000 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:760    .bss.Mode:00000000 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:766    .bss.f3:00000000 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:772    .bss.f2:00000000 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:778    .bss.f1:00000000 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:790    .bss.CurLEDi:00000000 $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:569    .text.main:0000007f $d
-C:\Users\Rusla\AppData\Local\Temp\ccbLweIO.s:569    .text.main:00000080 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:21     .text.GPIO_init__Memory:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:27     .text.GPIO_init__Memory:00000000 GPIO_init__Memory
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:41     .text.GPIO_InitLEDPB7:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:47     .text.GPIO_InitLEDPB7:00000000 GPIO_InitLEDPB7
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:86     .text.GPIO_InitLEDPB7:00000040 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:92     .text.GPIO_InitLEDPB14:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:98     .text.GPIO_InitLEDPB14:00000000 GPIO_InitLEDPB14
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:130    .text.GPIO_InitLEDPB14:00000038 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:136    .text.GPIO_InitLEDPB0:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:142    .text.GPIO_InitLEDPB0:00000000 GPIO_InitLEDPB0
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:176    .text.GPIO_InitLEDPB0:00000030 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:182    .text.GPIO_InitBtnPC12:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:188    .text.GPIO_InitBtnPC12:00000000 GPIO_InitBtnPC12
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:209    .text.GPIO_InitBtnPC12:00000014 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:214    .text.INIT:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:220    .text.INIT:00000000 INIT
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:249    .text.ResetLED:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:255    .text.ResetLED:00000000 ResetLED
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:356    .text.ResetLED:0000006c $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:773    .bss.f2:00000000 f2
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:785    .data.CoOLED:00000000 CoOLED
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:791    .bss.CurLEDi:00000000 CurLEDi
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:365    .text.Blink182:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:371    .text.Blink182:00000000 Blink182
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:446    .text.Blink182:00000048 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:755    .bss.Freq:00000000 Freq
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:767    .bss.f3:00000000 f3
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:453    .text.main:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:459    .text.main:00000000 main
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:567    .text.main:0000007e $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:724    .text.main:0000012c $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:779    .bss.f1:00000000 f1
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:748    .bss.Timer:00000000 Timer
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:761    .bss.Mode:00000000 Mode
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:745    .bss.Timer:00000000 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:752    .bss.Freq:00000000 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:762    .bss.Mode:00000000 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:768    .bss.f3:00000000 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:774    .bss.f2:00000000 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:780    .bss.f1:00000000 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:792    .bss.CurLEDi:00000000 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:572    .text.main:00000083 $d
+C:\Users\Rusla\AppData\Local\Temp\cc2i51Qo.s:572    .text.main:00000084 $t
 
 NO UNDEFINED SYMBOLS
