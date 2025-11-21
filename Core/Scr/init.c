@@ -78,6 +78,19 @@ void InitSystemTick1ms(void)
     SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk;
 }
 
+void ADC_Init(void)
+{
+    SET_BIT(RCC->APB2ENR, RCC_APB2ENR_ADC1EN);
+
+    CLEAR_BIT(ADC1->CR2, ADC_CR2_ADON); //adc off
+    SET_BIT(ADC->CCR, ADC_CCR_ADCPRE_0); // devide by 4
+    MODIFY_REG(ADC1->SQR1, ADC_SQR1_L, 0); //num of channels
+    MODIFY_REG(ADC1->SQR3, ADC_SQR3_SQ1, 9 << ADC_SQR3_SQ1_Pos); //first read 
+    MODIFY_REG(ADC1->SMPR2, ADC_SMPR2_SMP9, 4 << ADC_SMPR2_SMP9_Pos); // charging cyles
+    SET_BIT(ADC1->CR2, ADC_CR2_ADON); // adc on
+    
+}
+
 void InitClock168MHz(void)
 {
     RCC->APB1ENR |= RCC_APB1ENR_PWREN;

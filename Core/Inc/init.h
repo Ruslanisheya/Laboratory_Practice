@@ -11,5 +11,7 @@ void InitTIM2(void);
 void UpdFreqTIM2(uint8_t index);
 void OFF_LEDs(void);
 void LED_OnIndex(uint8_t index);
+void ADC_Init(void);
+uint16_t ReadPotentiometer(void);
 
 #endif

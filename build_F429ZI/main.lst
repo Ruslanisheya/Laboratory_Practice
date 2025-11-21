@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s 			page 1
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -31,9 +31,11 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s 			page 1
    1:Core/Scr/main.c **** #include "init.h"
    2:Core/Scr/main.c **** #include "it_handlers.h"
    3:Core/Scr/main.c **** 
-   4:Core/Scr/main.c **** void INIT (void)
-   5:Core/Scr/main.c **** {
-  29              		.loc 1 5 1 view -0
+   4:Core/Scr/main.c **** uint32_t Res = 0;
+   5:Core/Scr/main.c **** 
+   6:Core/Scr/main.c **** void INIT (void)
+   7:Core/Scr/main.c **** {
+  29              		.loc 1 7 1 view -0
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 0
   32              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -42,124 +44,136 @@ ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s 			page 1
   35              		.cfi_def_cfa_offset 8
   36              		.cfi_offset 3, -8
   37              		.cfi_offset 14, -4
-   6:Core/Scr/main.c ****     InitClock168MHz();
-  38              		.loc 1 6 5 view .LVU1
+   8:Core/Scr/main.c ****     InitClock168MHz();
+  38              		.loc 1 8 5 view .LVU1
   39 0002 FFF7FEFF 		bl	InitClock168MHz
   40              	.LVL0:
-   7:Core/Scr/main.c ****     InitSystemTick1ms();
-  41              		.loc 1 7 5 view .LVU2
+   9:Core/Scr/main.c ****     InitSystemTick1ms();
+  41              		.loc 1 9 5 view .LVU2
   42 0006 FFF7FEFF 		bl	InitSystemTick1ms
   43              	.LVL1:
-   8:Core/Scr/main.c ****     InitGPIOEXTI();
-  44              		.loc 1 8 5 view .LVU3
+  10:Core/Scr/main.c ****     InitGPIOEXTI();
+  44              		.loc 1 10 5 view .LVU3
   45 000a FFF7FEFF 		bl	InitGPIOEXTI
   46              	.LVL2:
-   9:Core/Scr/main.c ****     InitTIM2();
-  47              		.loc 1 9 5 view .LVU4
+  11:Core/Scr/main.c ****     InitTIM2();
+  47              		.loc 1 11 5 view .LVU4
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s 			page 2
+
+
   48 000e FFF7FEFF 		bl	InitTIM2
   49              	.LVL3:
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s 			page 2
-
-
-  10:Core/Scr/main.c **** }
-  50              		.loc 1 10 1 is_stmt 0 view .LVU5
-  51 0012 08BD     		pop	{r3, pc}
-  52              		.cfi_endproc
-  53              	.LFE130:
-  55              		.section	.text.main,"ax",%progbits
-  56              		.align	1
-  57              		.global	main
-  58              		.syntax unified
-  59              		.thumb
-  60              		.thumb_func
-  62              	main:
-  63              	.LFB131:
-  11:Core/Scr/main.c **** 
-  12:Core/Scr/main.c **** int main(void) 
-  13:Core/Scr/main.c **** {
-  64              		.loc 1 13 1 is_stmt 1 view -0
-  65              		.cfi_startproc
-  66              		@ Volatile: function does not return.
-  67              		@ args = 0, pretend = 0, frame = 0
-  68              		@ frame_needed = 0, uses_anonymous_args = 0
-  69 0000 08B5     		push	{r3, lr}
-  70              	.LCFI1:
-  71              		.cfi_def_cfa_offset 8
-  72              		.cfi_offset 3, -8
-  73              		.cfi_offset 14, -4
-  14:Core/Scr/main.c ****     INIT(); 
-  74              		.loc 1 14 5 view .LVU7
-  75 0002 FFF7FEFF 		bl	INIT
-  76              	.LVL4:
-  15:Core/Scr/main.c ****     OFF_LEDs();
-  77              		.loc 1 15 5 view .LVU8
-  78 0006 FFF7FEFF 		bl	OFF_LEDs
+  12:Core/Scr/main.c ****     ADC_Init();
+  50              		.loc 1 12 5 view .LVU5
+  51 0012 FFF7FEFF 		bl	ADC_Init
+  52              	.LVL4:
+  13:Core/Scr/main.c **** }
+  53              		.loc 1 13 1 is_stmt 0 view .LVU6
+  54 0016 08BD     		pop	{r3, pc}
+  55              		.cfi_endproc
+  56              	.LFE130:
+  58              		.section	.text.main,"ax",%progbits
+  59              		.align	1
+  60              		.global	main
+  61              		.syntax unified
+  62              		.thumb
+  63              		.thumb_func
+  65              	main:
+  66              	.LFB131:
+  14:Core/Scr/main.c **** 
+  15:Core/Scr/main.c **** int main(void) 
+  16:Core/Scr/main.c **** {
+  67              		.loc 1 16 1 is_stmt 1 view -0
+  68              		.cfi_startproc
+  69              		@ Volatile: function does not return.
+  70              		@ args = 0, pretend = 0, frame = 0
+  71              		@ frame_needed = 0, uses_anonymous_args = 0
+  72 0000 08B5     		push	{r3, lr}
+  73              	.LCFI1:
+  74              		.cfi_def_cfa_offset 8
+  75              		.cfi_offset 3, -8
+  76              		.cfi_offset 14, -4
+  17:Core/Scr/main.c ****     INIT(); 
+  77              		.loc 1 17 5 view .LVU8
+  78 0002 FFF7FEFF 		bl	INIT
   79              	.LVL5:
-  16:Core/Scr/main.c ****     Running = 0;
-  80              		.loc 1 16 5 view .LVU9
-  81              		.loc 1 16 13 is_stmt 0 view .LVU10
-  82 000a 0023     		movs	r3, #0
-  83 000c 034A     		ldr	r2, .L6
-  84 000e 1370     		strb	r3, [r2]
-  17:Core/Scr/main.c ****     CurLEDI = 0;
-  85              		.loc 1 17 5 is_stmt 1 view .LVU11
-  86              		.loc 1 17 13 is_stmt 0 view .LVU12
-  87 0010 034A     		ldr	r2, .L6+4
-  88 0012 1370     		strb	r3, [r2]
-  18:Core/Scr/main.c ****     SpeedI = 0;
-  89              		.loc 1 18 5 is_stmt 1 view .LVU13
-  90              		.loc 1 18 12 is_stmt 0 view .LVU14
-  91 0014 034A     		ldr	r2, .L6+8
-  92 0016 1370     		strb	r3, [r2]
-  93              	.L4:
-  19:Core/Scr/main.c **** 
-  20:Core/Scr/main.c ****     while (1) 
-  94              		.loc 1 20 5 is_stmt 1 view .LVU15
-  21:Core/Scr/main.c ****     {
-  22:Core/Scr/main.c ****         __WFI();
-  95              		.loc 1 22 9 discriminator 1 view .LVU16
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s 			page 3
+  18:Core/Scr/main.c ****     OFF_LEDs();
+  80              		.loc 1 18 5 view .LVU9
+  81 0006 FFF7FEFF 		bl	OFF_LEDs
+  82              	.LVL6:
+  19:Core/Scr/main.c ****     Running = 0;
+  83              		.loc 1 19 5 view .LVU10
+  84              		.loc 1 19 13 is_stmt 0 view .LVU11
+  85 000a 0023     		movs	r3, #0
+  86 000c 034A     		ldr	r2, .L6
+  87 000e 1370     		strb	r3, [r2]
+  20:Core/Scr/main.c ****     CurLEDI = 0;
+  88              		.loc 1 20 5 is_stmt 1 view .LVU12
+  89              		.loc 1 20 13 is_stmt 0 view .LVU13
+  90 0010 034A     		ldr	r2, .L6+4
+  91 0012 1370     		strb	r3, [r2]
+  21:Core/Scr/main.c ****     SpeedI = 0;
+  92              		.loc 1 21 5 is_stmt 1 view .LVU14
+  93              		.loc 1 21 12 is_stmt 0 view .LVU15
+  94 0014 034A     		ldr	r2, .L6+8
+  95 0016 1370     		strb	r3, [r2]
+  96              	.L4:
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s 			page 3
 
 
-  96              		.syntax unified
-  97              	@ 22 "Core/Scr/main.c" 1
-  98 0018 30BF     		wfi
-  99              	@ 0 "" 2
-  20:Core/Scr/main.c ****     {
- 100              		.loc 1 20 11 view .LVU17
- 101              		.thumb
- 102              		.syntax unified
- 103 001a FDE7     		b	.L4
- 104              	.L7:
- 105              		.align	2
- 106              	.L6:
- 107 001c 00000000 		.word	Running
- 108 0020 00000000 		.word	CurLEDI
- 109 0024 00000000 		.word	SpeedI
- 110              		.cfi_endproc
- 111              	.LFE131:
- 113              		.text
- 114              	.Letext0:
- 115              		.file 2 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_defa
- 116              		.file 3 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h
- 117              		.file 4 "Core/Inc/it_handlers.h"
- 118              		.file 5 "Core/Inc/init.h"
-ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s 			page 4
+  22:Core/Scr/main.c **** 
+  23:Core/Scr/main.c ****     while (1) 
+  97              		.loc 1 23 5 is_stmt 1 view .LVU16
+  24:Core/Scr/main.c ****     {
+  25:Core/Scr/main.c ****         __WFI();
+  98              		.loc 1 25 9 discriminator 1 view .LVU17
+  99              		.syntax unified
+ 100              	@ 25 "Core/Scr/main.c" 1
+ 101 0018 30BF     		wfi
+ 102              	@ 0 "" 2
+  23:Core/Scr/main.c ****     {
+ 103              		.loc 1 23 11 view .LVU18
+ 104              		.thumb
+ 105              		.syntax unified
+ 106 001a FDE7     		b	.L4
+ 107              	.L7:
+ 108              		.align	2
+ 109              	.L6:
+ 110 001c 00000000 		.word	Running
+ 111 0020 00000000 		.word	CurLEDI
+ 112 0024 00000000 		.word	SpeedI
+ 113              		.cfi_endproc
+ 114              	.LFE131:
+ 116              		.global	Res
+ 117              		.section	.bss.Res,"aw",%nobits
+ 118              		.align	2
+ 121              	Res:
+ 122 0000 00000000 		.space	4
+ 123              		.text
+ 124              	.Letext0:
+ 125              		.file 2 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/machine/_defa
+ 126              		.file 3 "C:/programms/Tools/xpack-arm-none-eabi-gcc-13.2.1-1.1/arm-none-eabi/include/sys/_stdint.h
+ 127              		.file 4 "Core/Inc/it_handlers.h"
+ 128              		.file 5 "Core/Inc/init.h"
+ARM GAS  C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s:21     .text.INIT:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s:27     .text.INIT:00000000 INIT
-C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s:56     .text.main:00000000 $t
-C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s:62     .text.main:00000000 main
-C:\Users\Rusla\AppData\Local\Temp\ccl7EhS2.s:107    .text.main:0000001c $d
+C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s:21     .text.INIT:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s:27     .text.INIT:00000000 INIT
+C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s:59     .text.main:00000000 $t
+C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s:65     .text.main:00000000 main
+C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s:110    .text.main:0000001c $d
+C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s:121    .bss.Res:00000000 Res
+C:\Users\Rusla\AppData\Local\Temp\ccUgAr49.s:118    .bss.Res:00000000 $d
 
 UNDEFINED SYMBOLS
 InitClock168MHz
 InitSystemTick1ms
 InitGPIOEXTI
 InitTIM2
+ADC_Init
 OFF_LEDs
 Running
 CurLEDI
