@@ -4,6 +4,7 @@
         "stdint.h": "c",
         "init.h": "c",
         "stm32f4xx.h": "c",
-        "it_handlers.h": "c"
+        "it_handlers.h": "c",
+        "stm32f429xx.h": "c"
     }
 }

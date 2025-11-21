@@ -136,7 +136,7 @@ C_SOURCES =  \
 $(SYS) \
 Core/Src/main.c \
 Core/Scr/init.c \
-Core/Scr/it_handlers.c \
+Core\Src\it_handlers.c \
 
 # ASM sources
 ASM_SOURCES =  \

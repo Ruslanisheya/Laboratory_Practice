@@ -1,8 +1,15 @@
 #include <stdint.h>
 #include "..\..\CMSIS\Devices\STM32F4xx\Inc\STM32F429xx\stm32f429xx.h"
-#include "stm32f4xx.h"
 
-void RCC_Ini(void);
-void GPIO_Ini(void);
-void EXTI_ITR_Ini(void);
-void SysTick_Init(void);
+#ifndef INIT_H
+#define INIT_H
+
+void InitClock168MHz(void);
+void InitSystemTick1ms(void);
+void InitGPIOEXTI(void);
+void InitTIM2(void);
+void UpdFreqTIM2(uint8_t index);
+void OFF_LEDs(void);
+void LED_OnIndex(uint8_t index);
+
+#endif
